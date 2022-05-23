@@ -9,7 +9,7 @@ interface FoodProps {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
   available: boolean;
   image: string;
 }
