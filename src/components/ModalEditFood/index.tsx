@@ -34,11 +34,7 @@ function ModalEditFood({
 
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <Form
-        ref={this.formRef}
-        onSubmit={this.handleSubmit}
-        initialData={editingFood}
-      >
+      <Form ref={formRef} onSubmit={handleSubmit} initialData={editingFood}>
         <h1>Editar Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
 
