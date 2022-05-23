@@ -1,9 +1,8 @@
-import { Component, createContext, useState } from "react";
+import { useState } from "react";
 import { FiEdit3, FiTrash } from "react-icons/fi";
 
 import { Container } from "./styles";
 import api from "../../services/api";
-import { number } from "yup";
 
 interface FoodProps {
   id: number;
