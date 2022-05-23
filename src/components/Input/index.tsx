@@ -7,14 +7,14 @@ import { IconType } from "react-icons";
 
 interface InputProps {
   name: string;
-  icon: IconType;
+  icon?: IconType;
 }
 
-const Input = ({
+function Input({
   name,
   icon: Icon,
   ...rest
-}: InputProps & React.InputHTMLAttributes<HTMLInputElement>) => {
+}: InputProps & React.InputHTMLAttributes<HTMLInputElement>) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [isFocused, setIsFocused] = useState(false);
@@ -53,6 +53,6 @@ const Input = ({
       />
     </Container>
   );
-};
+}
 
 export default Input;
